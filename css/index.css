@@ -77,9 +77,6 @@ header .container{
    -ms-border-radius: 50px ;
    -o-border-radius: 50px ;
 }
-header .logo{
-   
-}
 header nav{
    /* flex: 1; */
    display: flex;
@@ -94,16 +91,12 @@ header nav .toggle-menu{
    header nav .toggle-menu{
        display: none;
    }
-   
+
 }
 nav ul.items{
    display: flex;
 }
-@media (max-width:767px) {
-   nav ul.items{
 
-}
-}
 @media (max-width:992px) {
    header nav .toggle-menu+ ul{
       display: flex;
@@ -175,6 +168,16 @@ nav .form{
 @media (max-width:992px) {
    .form {
       display: none;
+   }
+}
+@media (max-width:992px) {
+   header .container{
+      min-height: 10px !important;
+      height: auto;
+      padding: 10px 20px; 
+}
+   header .logo img{
+      width: 50px;
    }
 }
 /*end header */
@@ -384,16 +387,19 @@ nav .form{
 }
 .sale .box:first-child .text p{
    font-size: 16px;
-   margin-top: 40px;
+   margin: 40px 0 80px;
 }
 @media (max-width:992px) {
+   .sale .box .text{
+      width:unset;
+   }
    .sale .box:first-child .text p ,  .sale .box:last-child .text h1{
-
       margin-bottom: 80px;
    }
    .sale .box img{
-      /* width: 50%; */
+      width: 100%;
       overflow: hidden;
+      object-fit: contain;
    }
 }
 .sale .box:last-child .text{
