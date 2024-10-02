@@ -1,0 +1,61 @@
+/*start variables*/
+:root{
+    --main-color:#E88599;
+    --transparent-color: rgb(15 116 143 /70%);
+    --section-padding:100px;
+    --main-tran:0.5s;
+    --main-radius:15px;
+}
+/*end variables*/
+.blog .container{
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 70px;
+}
+.blog .container .card{
+    border-radius: var(--main-radius);
+    -webkit-border-radius: var(--main-radius);
+    -moz-border-radius: var(--main-radius);
+    -ms-border-radius: var(--main-radius);
+    background-color: #F9F9F9;
+}
+.blog .container .card img{
+    max-width: 100%;
+    border-radius: var(--main-radius) var(--main-radius) 0 0;
+    -webkit-border-radius: var(--main-radius) var(--main-radius) 0 0;
+    -moz-border-radius: var(--main-radius) var(--main-radius) 0 0;
+    -ms-border-radius: var(--main-radius) var(--main-radius) 0 0;
+    -o-border-radius: var(--main-radius) var(--main-radius) 0 0;
+}
+.blog .container .card .text{
+    padding: 40px 30px 50px;
+}
+.blog .container .card .text span{
+    color: #527CEB;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 20px;
+}
+.blog .container .card .text h2{
+    margin-bottom: 20px;
+}
+.blog .container .card .text p{
+    font-size: 18px;
+    font-weight: 700;
+    color: #5F5F5F;
+    margin-bottom: 20px;
+}
+.blog .container .card .text a{
+    color: var(--main-color);
+    font-weight: bold;
+    transition: var(--main-tran);
+    -webkit-transition: var(--main-tran);
+    -moz-transition: var(--main-tran);
+    -ms-transition: var(--main-tran);
+    -o-transition: var(--main-tran);
+}
+.blog .container .card .text a:hover{
+    color: var(--transparent-color);
+}

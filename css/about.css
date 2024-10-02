@@ -1,0 +1,83 @@
+/*start variables*/
+:root{
+    --main-color:#E88599;
+    --transparent-color: rgb(15 116 143 /70%);
+    --section-padding:100px;
+    --main-tran:0.5s;
+    --main-radius:15px;
+}
+/*end variables*/
+/* start header  */
+header{
+    position: unset;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+header .container{
+
+   border-radius: 0px ;
+   -webkit-border-radius: 0px ;
+   -moz-border-radius: 0px ;
+   -ms-border-radius: 0px ;
+   -o-border-radius: 0px ;
+}
+/* end header  */
+.hero{
+    background:url('..//images/Banner.png') no-repeat center center;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+    min-height: 20rem;
+}
+
+.hero .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    padding: 100px 0;
+    flex-direction: column;
+    text-align: center;
+}
+@media (max-width:992px) {
+    .hero{
+        background-size: cover;
+        min-height: 15rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero .container{
+        padding: 20px;
+    }
+}
+/* start images  */
+.images .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
+    padding: 50px 0;
+}
+.images .image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.images .image:nth-child(2){
+    margin-top: 50px;
+}
+@media (max-width:992px) {
+    .images .container{
+        gap: 0px;
+    }
+    .images .image:nth-child(2){
+        margin: 40px;
+    }
+}
+.images .image img{
+    max-width: 100%;
+    margin: 20px;
+}
+/* end images  */

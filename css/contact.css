@@ -1,0 +1,124 @@
+/*start variables*/
+:root{
+    --main-color:#E88599;
+    --transparent-color: rgb(15 116 143 /70%);
+    --section-padding:100px;
+    --main-tran:0.5s;
+    --main-radius:15px;
+}
+/*end variables*/
+/* start contact us  */
+.contact-us .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+
+.contact-us .container .left{
+    width: 40%;
+    padding-top: 50px;
+}
+.contact-us .container .left .social{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-us .container .left .social .item{
+
+    cursor: pointer;
+}
+.contact-us .container .left .social i{
+    color: var(--main-color);
+    font-size: 20px;
+    transition: var(--main-tran);
+    -webkit-transition: var(--main-tran);
+    -moz-transition: var(--main-tran);
+    -ms-transition: var(--main-tran);
+    -o-transition: var(--main-tran);
+    margin-right: 10px;
+    padding: 10px;
+}
+.contact-us .container .left .social .item:hover i
+{
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 15px;
+}
+.contact-us .container .left .item a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: var(--main-tran);
+    -webkit-transition: var(--main-tran);
+    -moz-transition: var(--main-tran);
+    -ms-transition: var(--main-tran);
+    -o-transition: var(--main-tran);
+}
+.contact-us .container .left .item:hover a{
+    color: var(--main-color);
+}
+.contact-us .container .right{
+    width: 60%;
+    padding: 80px 20px;
+    background-color: #EEF2FD;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+@media (max-width:992px) {
+    .contact-us .container{
+        flex-direction: column;
+    }
+    .contact-us .container .left , .contact-us .container .right{
+        width: 100%;
+    }
+}
+.contact-us form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.contact-us form input , .contact-us form textarea{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    width: 70%;
+    text-align: left;
+}
+.contact-us form textarea{
+    resize: none;
+}
+.contact-us form input[type="submit"]{
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    transition: var(--main-tran);
+    -webkit-transition: var(--main-tran);
+    -moz-transition: var(--main-tran);
+    -ms-transition: var(--main-tran);
+    -o-transition: var(--main-tran);
+    text-align: center;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.contact-us form input[type="submit"]:hover{
+    background-color: white;
+    color: var(--main-color);
+}
+/* end contact us  */
