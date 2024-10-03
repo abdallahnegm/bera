@@ -602,6 +602,8 @@ nav .form{
    display: flex;
    gap: 50px;
    width: 100%;
+   align-items: center;
+
 }
 @media (max-width:992px) {
    .testimonials .client{
@@ -618,7 +620,6 @@ nav .form{
    flex-direction: column;
    gap: 10px;
    text-align: left;
-   align-items: center;
 }
 .testimonials .right img{
    max-height: 100px;
